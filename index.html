@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Favicon -->
+
+    <title>Mausam - Check Weather</title>
+  </head>
+  <body>
+    <div class="center">
+      <div class="header">
+        <h2>Mausam App</h2>
+        <p>Enter a location for weather information.</p>
+        <form class="input_form" autocomplete="off">
+          <input type="text" class="city_input" name="city" />
+        </form>
+      </div>
+      <div class="weather_wrapper hide">
+        <img class="weather_img" src="./img/day.svg" alt="" />
+        <img class="weather_icon" src="./img/icons/1.svg" alt="" />
+        <div class="weather_txt">
+          <h2 class="city_name">City name</h2>
+          <h4 class="weather_condition">Weather Condition</h4>
+          <h3 class="temps">Temp &deg;C</h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/forecast.js"></script>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>

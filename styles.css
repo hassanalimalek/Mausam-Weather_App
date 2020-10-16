@@ -1,0 +1,120 @@
+/* Google  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Libre+Franklin:wght@500&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+/* Resets */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+ 
+    background-color:#202030;
+    color: white;
+}
+
+.center{
+    width: 95%;
+    margin:20px auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Header */
+.header h2{
+    margin-bottom: 10px;
+}
+.header p{
+    font-weight: lighter;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Input Form */
+
+.input_form{
+    width: 60%;
+    max-width: 300px;
+    margin: auto;
+}
+.city_input{
+    width: 100%;
+    line-height: 2rem;
+    border-radius: 3px;
+    border: none;
+    text-indent: 10px;
+}
+
+/* Weather Card */
+
+.weather_wrapper{
+    background-color: #fff;
+    width: 300px;
+    margin: 30px auto;
+    color: #202030;
+    border-radius: 5px;
+    position: relative;
+
+    
+}
+.weather_img{
+    width: 100%;
+    display: inline-block;
+}
+.weather_icon{
+    background-color: rgb(233, 233, 233);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translatex(-50%);
+}
+img{
+    border-radius: 5px 5px 0 0;
+}
+.weather_txt{
+    margin-top: 8px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-weight: bold;
+}
+.city_name{
+    font-size: 1.8rem;
+    font-weight: 300 !important;
+    margin-bottom: 3%;
+}
+.weather_condition{
+    font-weight: 200 !important;
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+}
+.temps{
+    font-family: 'Libre Franklin', sans-serif;
+    margin-bottom: 3%;
+}
+.hide{
+    display: none;
+}
+
+@media only screen and (min-width:600px){
+    .weather_wrapper{
+        width: 350px;
+    }
+    .weather_icon{
+        position: absolute;
+        top: 55%;
+        left: 50%;
+    }
+    .weather_txt{
+        margin-top: 20px;
+        
+    }
+}
